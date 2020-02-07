@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,12 @@
 		2A3CA26E23ECFF87007BC073 /* Okta_Login.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CA26C23ECFF87007BC073 /* Okta_Login.xcdatamodeld */; };
 		2A3CA27023ECFF8A007BC073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3CA26F23ECFF8A007BC073 /* Assets.xcassets */; };
 		2A3CA27323ECFF8A007BC073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3CA27123ECFF8A007BC073 /* LaunchScreen.storyboard */; };
+		2A75C05423ED007D00EB904C /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A75C05323ED007C00EB904C /* Okta.plist */; };
+		918A59291C71EF2F163A87F8 /* Pods_Okta_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716FFD948975DEECA72474 /* Pods_Okta_Login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA90310E2B1CE6F17B5A3D3 /* Pods-Okta-Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Okta-Login.release.xcconfig"; path = "Target Support Files/Pods-Okta-Login/Pods-Okta-Login.release.xcconfig"; sourceTree = "<group>"; };
 		2A3CA26023ECFF87007BC073 /* Okta-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okta-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3CA26323ECFF87007BC073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A3CA26523ECFF87007BC073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		2A3CA26F23ECFF8A007BC073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A3CA27223ECFF8A007BC073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A3CA27423ECFF8A007BC073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A75C05323ED007C00EB904C /* Okta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
+		5B716FFD948975DEECA72474 /* Pods_Okta_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Okta_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D13280F56A50B8C2CF6487B /* Pods-Okta-Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Okta-Login.debug.xcconfig"; path = "Target Support Files/Pods-Okta-Login/Pods-Okta-Login.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918A59291C71EF2F163A87F8 /* Pods_Okta_Login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				2A3CA26223ECFF87007BC073 /* Okta-Login */,
 				2A3CA26123ECFF87007BC073 /* Products */,
+				A72E74462F51B10F80547833 /* Pods */,
+				E9A2EE2158B6E73C9DF14CB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 		2A3CA26223ECFF87007BC073 /* Okta-Login */ = {
 			isa = PBXGroup;
 			children = (
+				2A75C05323ED007C00EB904C /* Okta.plist */,
 				2A3CA26323ECFF87007BC073 /* AppDelegate.swift */,
 				2A3CA26523ECFF87007BC073 /* SceneDelegate.swift */,
 				2A3CA26723ECFF87007BC073 /* ViewController.swift */,
@@ -70,6 +80,23 @@
 			path = "Okta-Login";
 			sourceTree = "<group>";
 		};
+		A72E74462F51B10F80547833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D13280F56A50B8C2CF6487B /* Pods-Okta-Login.debug.xcconfig */,
+				0EA90310E2B1CE6F17B5A3D3 /* Pods-Okta-Login.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9A2EE2158B6E73C9DF14CB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B716FFD948975DEECA72474 /* Pods_Okta_Login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A3CA27723ECFF8A007BC073 /* Build configuration list for PBXNativeTarget "Okta-Login" */;
 			buildPhases = (
+				FB28A39C7135090ED3D5A14C /* [CP] Check Pods Manifest.lock */,
 				2A3CA25C23ECFF87007BC073 /* Sources */,
 				2A3CA25D23ECFF87007BC073 /* Frameworks */,
 				2A3CA25E23ECFF87007BC073 /* Resources */,
+				CAA9B5EC76F40D8497A6C67F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,10 +160,53 @@
 				2A3CA27323ECFF8A007BC073 /* LaunchScreen.storyboard in Resources */,
 				2A3CA27023ECFF8A007BC073 /* Assets.xcassets in Resources */,
 				2A3CA26B23ECFF87007BC073 /* Main.storyboard in Resources */,
+				2A75C05423ED007D00EB904C /* Okta.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CAA9B5EC76F40D8497A6C67F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Okta-Login/Pods-Okta-Login-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Okta-Login/Pods-Okta-Login-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Okta-Login/Pods-Okta-Login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB28A39C7135090ED3D5A14C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Okta-Login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A3CA25C23ECFF87007BC073 /* Sources */ = {
@@ -286,6 +358,7 @@
 		};
 		2A3CA27823ECFF8A007BC073 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D13280F56A50B8C2CF6487B /* Pods-Okta-Login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +377,7 @@
 		};
 		2A3CA27923ECFF8A007BC073 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA90310E2B1CE6F17B5A3D3 /* Pods-Okta-Login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
